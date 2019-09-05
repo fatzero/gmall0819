@@ -1,33 +1,34 @@
-package com.atguigu.gmall.user.bean;
+package com.atguigu.gmall.bean;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
-public class UmsMember {
+public class UmsMember implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    private String member_level_id;
+    private String         memberLevelId;
     private String username;
-    private String password;
+    private String         password;
     private String nickname;
-    private String phone;
+    private String         phone;
     private int status;
-    private Date create_time;
+    private Date createTime;
     private String icon;
-    private int gender;
+    private int         gender;
     private Date birthday;
-    private String city;
+    private String        city;
     private String job;
-    private String personalized_signature;
-    private int source_type;
-    private int integration;
+    private String         personalizedSignature;
+    private int sourceType;
+    private int         integration;
     private int growth;
-    private int luckey_count;
-    private int history_integration;
+    private int         luckeyCount;
+    private int historyIntegration;
 
     public String getId() {
         return id;
@@ -37,12 +38,12 @@ public class UmsMember {
         this.id = id;
     }
 
-    public String getMember_level_id() {
-        return member_level_id;
+    public String getMemberLevelId() {
+        return memberLevelId;
     }
 
-    public void setMember_level_id(String member_level_id) {
-        this.member_level_id = member_level_id;
+    public void setMemberLevelId(String memberLevelId) {
+        this.memberLevelId = memberLevelId;
     }
 
     public String getUsername() {
@@ -85,12 +86,12 @@ public class UmsMember {
         this.status = status;
     }
 
-    public Date getCreate_time() {
-        return create_time;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setCreate_time(Date create_time) {
-        this.create_time = create_time;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 
     public String getIcon() {
@@ -133,20 +134,20 @@ public class UmsMember {
         this.job = job;
     }
 
-    public String getPersonalized_signature() {
-        return personalized_signature;
+    public String getPersonalizedSignature() {
+        return personalizedSignature;
     }
 
-    public void setPersonalized_signature(String personalized_signature) {
-        this.personalized_signature = personalized_signature;
+    public void setPersonalizedSignature(String personalizedSignature) {
+        this.personalizedSignature = personalizedSignature;
     }
 
-    public int getSource_type() {
-        return source_type;
+    public int getSourceType() {
+        return sourceType;
     }
 
-    public void setSource_type(int source_type) {
-        this.source_type = source_type;
+    public void setSourceType(int sourceType) {
+        this.sourceType = sourceType;
     }
 
     public int getIntegration() {
@@ -165,19 +166,19 @@ public class UmsMember {
         this.growth = growth;
     }
 
-    public int getLuckey_count() {
-        return luckey_count;
+    public int getLuckeyCount() {
+        return luckeyCount;
     }
 
-    public void setLuckey_count(int luckey_count) {
-        this.luckey_count = luckey_count;
+    public void setLuckeyCount(int luckeyCount) {
+        this.luckeyCount = luckeyCount;
     }
 
-    public int getHistory_integration() {
-        return history_integration;
+    public int getHistoryIntegration() {
+        return historyIntegration;
     }
 
-    public void setHistory_integration(int history_integration) {
-        this.history_integration = history_integration;
+    public void setHistoryIntegration(int historyIntegration) {
+        this.historyIntegration = historyIntegration;
     }
 }
